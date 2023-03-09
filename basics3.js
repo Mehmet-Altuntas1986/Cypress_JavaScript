@@ -62,12 +62,23 @@ for (let i=0;i<mark.length;i++){
 }
 
 //write sum of all elelments
+var mark=[20,30,40,12,37,100];
 var sum=0;
 for (let i=0;i<mark.length;i++){
     console.log(mark[i])
 
     sum=sum+mark[i]
 }
+console.log(sum)
+
+
+console.log("********************")
+
+//reduce filter map  --yuakridaki for loop ta yaptigimizin aynisini yapar -- 2 tane argument kabul eder
+
+var mark=[20,30,40,12,37,100];
+var sum=0;
+let total=mark.reduce( (sum,mark) =>sum+mark,0 )
 
 
 
