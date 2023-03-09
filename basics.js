@@ -44,5 +44,5 @@ console.log(e)  //6.34
 //const variable means constant  , reassigning not allowed
 //const a   not allowed  a is used with let above
 const f=5
-f=6  // compilation hatasi vermez ama 6 degerini de reassignment yapmaz
+f=6   // compilation hatasi vermez ama 6 degerini de reassignment yapmaz
 console.log(f)  // uyari verir console   TypeError: Assignment to constant variable.
