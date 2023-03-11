@@ -62,9 +62,9 @@ let apple="eat apple  apple apple"
 let val=apple.indexOf("lp")  //-1
 let vaybe=apple.indexOf ("pl")
 console.log(apple.indexOf("lp"))   //eger lp yoksa consolda -1 yazdirir
-
+//it continues until condition is false
 while(vaybe!=-1){
     count++
     vaybe=apple.indexOf("pl",vaybe+1)  //gut logic
 }
-console.log(count)
+console.log(count)  //3 tane pl var
