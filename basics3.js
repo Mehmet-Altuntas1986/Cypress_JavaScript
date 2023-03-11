@@ -17,7 +17,7 @@ mark.length   // gives the number of elelments in array
 mark.length
 console.log(mark.length); //6
 
-//push(value)   appends new elelments to an array
+//push(value)   appends new elelments to an array (in the last order)
 mark.push(65)
 console.log(mark)
 
@@ -31,7 +31,7 @@ console.log(mark.unshift(12))
 console.log("************");
 console.log('************');
 console.log(mark);
-//write any value inside array to see its index by using indexof() method
+//write any value found inside the array to see its index by using indexof() method
 
 console.log(mark.indexOf(12));  //0  first element
 
@@ -44,14 +44,14 @@ console.log(mark.includes(12 | 40)); //false        | tekli or operator calismiy
 console.log(mark.includes(12 || 40)); //true        || cift olacak sekilde kullanilabilir
 
 console.log(mark.includes(12 & 40)); //false      & operator kullanma
-console.log(mark.includes(12 && 40)); //false
+console.log(mark.includes(12 && 40)); //false    //kullanma &&
 
 
 //slice(a,b)  prints the characters between indexes -->  starts from index a to index b  , b is not included 
 console.log(mark.slice(2 ,6))   // index 2,3,4,5  i yazdirir
 //submark=mark.slice(2 ,6) 
 // mark in onunde var vardi , asagida bu sekilde yapinca submark i default olarak var yapar  --yeni variable ismi oldu
-submark=mark.slice(2 ,6) //=mark.slice(2 ,6)     //submark i default olarak  var olarak atar  -- inteligence 
+submark=mark.slice(2 ,6) //=mark.slice(2 ,6)     //submark i default olarak  var olarak atar  -- inteligence (mark ile ayni)
 console.log(submark) 
 
 
@@ -127,7 +127,7 @@ console.log(mappedArray) // 36, 42, 48 ]
 
 //simdi yine elemntleri toplama islemini yapalim reduce methodu ile
 
-let totalSumElements =mappedArray.reduce((sum,values)=>sum+values,0)    //iteration    0 sum in ilk degeri
+let totalSumElements =mappedArray.reduce((sum,values)=>sum+values,0)    //iteration    0 --sum in ilk degeri
 
 /*   
 sum=sum+values   herbir dongude sum degerleri degisiyor

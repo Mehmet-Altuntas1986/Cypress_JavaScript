@@ -66,7 +66,7 @@ for(let k=0;k<10;k++){
     if(k%2==0 || k%5==0){
     console.log(k)  
            n++
-           if(n==3)       //if there is only one statement , without braces i can do
+           if(n==3)       //if there is only one statement , without curly braces i can do
             break                //go out of the loop  -- breaks the loop
            
 
