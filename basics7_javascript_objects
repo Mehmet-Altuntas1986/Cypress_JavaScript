@@ -1,0 +1,29 @@
+//object is collection of properties
+
+
+//person is object  , inside curly braces it has 2 properties
+let person={
+    firstName:'tim',
+    lastName:"joe"
+}
+
+//how to access properties value
+
+console.log(person.lastName)  //joe
+console.log(person['lastName'])  //joe
+//or
+console.log(person['firstName']) //tim
+
+console.log(person.firstName)  //tim
+
+person.firstName="tim dane"    // --> reaasignment of property
+
+person.gender="male"    //added new property inside object 
+
+//see all edits in object
+console.log(person)      //{ firstName: 'tim dane', lastName: 'joe', gender: 'male' }
+
+//delete property
+
+delete person.gender 
+console.log(person)     //{ firstName: 'tim dane', lastName: 'joe' }
