@@ -79,4 +79,4 @@ if(true){
 }
 console.log(b)  //def    --> global i algilar
 
-//const variable cannot be reinitialized   , only difference with let
+//const variable cannot be reinitialized   , this is only difference with let
