@@ -4,8 +4,11 @@
 //person is object  , inside curly braces it has 2 properties
 let person={
     firstName:'tim',
-    lastName:"joe"
+    lastName:' joe',
+    age:24,
+    
 }
+
 
 //how to access properties value
 
@@ -27,3 +30,26 @@ console.log(person)      //{ firstName: 'tim dane', lastName: 'joe', gender: 'ma
 
 delete person.gender 
 console.log(person)     //{ firstName: 'tim dane', lastName: 'joe' }
+
+//note once ifadeyi yazip sonra print ifadelerini yazmak hatalari azaltiyor
+
+// if gender is present in person  , return true
+console.log('gender' in person)  //false
+
+//if we want to print all properties of object  --> properties has keys and values --> keys goes into loop one by one
+//interview question 
+
+for(let key in person){
+    console.log(person[key])
+}
+
+console.log("----------------------------")
+
+let school={
+    schoolName:'Cinar',
+    schoolId:5,
+    schoolIdName:function(){
+console.log(this.schoolId+": "+ this.schoolName)
+    }
+}
+console.log(school.schoolIdName())    //schoolIdName()   dikkat () isareti ile method oldugunu belirtmelisin , yoksa print alamazsin
