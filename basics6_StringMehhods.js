@@ -1,3 +1,6 @@
+//boyle yapinca basics8 deki class ile object olusturabiliriz burada  -- en asagida object olusturduk
+const Person=require('./basics8_class')              //' '  tekli kullan , double burda kullanma
+
 let day="tuesday"   //' ' can be used
 
 console.log(day[1]) //   gives chracter in index 1
@@ -68,3 +71,15 @@ while(vaybe!=-1){
     vaybe=apple.indexOf("pl",vaybe+1)  //gut logic
 }
 console.log(count)  //3 tane pl var
+
+/*
+to access the another file  (" double quotes kullanma require kisminda")
+
+1.adimda        module.exports=class Person{                           basics8_class     file
+2.adimda        const Person=require('./basics8_class')                basics6_StringMethods file
+
+sonra object olusturdu ve diger file daki verielri kullanabildi
+*/
+let prs=new Person("Tim"," joseph")
+console.log (prs.age)
+console.log(prs.fullName())
