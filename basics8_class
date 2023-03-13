@@ -1,0 +1,35 @@
+module.exports= class Person{               //module.exports  u videonun sonuan dogru koyduk , artik baska bir class ta kullanabiliriz
+
+age=25      //constructor in disindakiler class properties
+
+//location="canada"  //or use getter method to create same and when you call dont use () paranthesis , 
+                    // cunku getter bir propertiyi cagirir , properti olusturdu
+get location()
+{
+     return "canada"
+}
+
+constructor(firstName,lastName)               //CLASS in icinde koy  //kucuk harflerle yazmalisin
+{                        
+   this.firstName=firstName        //this.firstName deyince bir class --instance-- propertisi olusturmus olduk
+   this.lastName =lastName
+}
+
+//bir method olustur
+fullName() {
+    console.log(this.firstName +this.lastName)
+}
+
+}
+
+//constructor is a method which executes by default when you create an object of the class
+
+//if you want to access any member of class , create object
+/*
+let person =new Person("Tim"," joseph")  //person isimlerine dikkat et , object referans ismi farkli olmali
+let person1 =new Person("Tony"," CONN")
+console.log(person.age)
+console.log(person.location)   //DIKKAT ET getter kullaninca () braces kullanmadan cagirdi
+console.log(person.fullName())
+console.log(person1.fullName())
+*/
