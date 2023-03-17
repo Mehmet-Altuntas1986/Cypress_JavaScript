@@ -1,0 +1,23 @@
+//inheritance is the main pillar in object oriented Programming
+//one clsaa can inherit/acquire the properties , methods of another class
+//the class which inherits , is known subclass(derived class or child class)
+//the class whose properties are used is known as superclass
+const Person=require('./basics8_class')
+class Pet extends Person{                   //Pet is child class            //Person is Parent class
+  
+get location()
+    {
+        return "BlueCross"
+    }
+
+ constructor(firstName,lastName)
+    {
+    //call parent class constructor   with super() 
+    super("Tim"," joseph")
+    }
+
+}
+
+let pet=new Pet("sam","san")
+pet.fullName()
+console.log(pet.location );
