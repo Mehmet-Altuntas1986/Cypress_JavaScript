@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+
+</body>
+</html>
+
+
+<!--
+     ^ External scripts are practical when the same code is used in many different web pages.
+JavaScript files have the file extension .js.
+
+To use an external script, put the name of the script file in the src (source) attribute of a <script> tag:
+~note: Benim olusturdugum bir myscript.js  file i yok , bu yuzden calismaz ama boyle bir file in icinde 
+^bir myFunction() method u var oldugunu dusun
+
+!You can place an external script reference in <head> or <body> as you like.
+
+!The script will behave as if it was located exactly where the <script> tag is located.
+
+
+    ? --External JavaScript Advantages--
+*Placing scripts in external files has some advantages:
+
+*It separates HTML and code
+*It makes HTML and JavaScript easier to read and maintain
+*Cached JavaScript files can speed up page loads
+*To add several script files to one page  - use several script tags:
+
+~Example
+<script src="myScript1.js"></script>
+<script src="myScript2.js"></script>
+
+External References
+~An external script can be referenced in 3 different ways:
+
+1.With a full URL (a full web address)
+2.With a file path (like /js/)
+3.Without any path
+!This example uses a full URL to link to myScript.js:
+ ~          <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+!This example uses a file path to link to myScript.js:
+~      <script src="/js/myScript.js"></script>
+
+!This example uses no path to link to myScript.js:   //in the same folder
+
+<script src="myScript.js"></script>
+
+
+
+
+-->
