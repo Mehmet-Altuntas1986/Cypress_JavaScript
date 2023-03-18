@@ -132,6 +132,6 @@ console.log("m1 is :"+m1);                   //4
 
 
 //  With var, you can use a variable before it is declared:   //ayni seyi let ile yapinca reference hatasi verir
-  myCarName="volvo"    // Assign volvo to myCarName
-  var myCarName;       // Declare myCarName
+myCarName="volvo"    // Assign volvo to myCarName
+var myCarName;       // Declare myCarName
 
