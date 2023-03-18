@@ -37,7 +37,7 @@ If you want your code to run in older browsers, you must use var.
 // ^If you want a general rule: always declare variables with const. (VALUE CANNOT BE CHANGED)
 
 const price1 = 5;
- price1 = 6;
+ //price1 = 6;
  console.log(price1)
 
  /*
@@ -89,7 +89,53 @@ let person = "John Doe", car = "Volvo", price = 200;
 
 
 //A declaration can span multiple lines:
-let person1 = "John Doe",
+let person1 = "John Doe",                     //Put comma   ,   between them
 carName2 = "Volvo",
 price2 = 200;
+
+//~The variable AutoName will have the value undefined after the execution of this statement:
+let AutoName;    
+
+
+/*
+Re-Declaring JavaScript Variables
+!If you re-declare a JavaScript variable declared with -- var --, it will not lose its value.
+
+The variable carName will still have the value "Volvo" after the execution of these statements:
+*/
+var car1Name = "Volvo";
+var car1Name;               //redecleration in var possible   , in let not
+
+// ~ You cannot re-declare a variable declared with let or const.
+
+// & This will not work:
+
+let car3Name = "Volvo";
+//let car3Name;      //gives compile error
+
+
+
+//As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:
+
+let d = 5 + 2 + 3;
+let e = "John" + " " + "Doe";   //concetenation
+let f = "5" + 2 + 3;
+
+
+/*Doalr sign can be used as a identifier
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo").innerHTML = $$$ + $myMoney;
+</script>
+
+
+<script>
+let _x = 2;
+let _100 = 5;
+
+document.getElementById("demo").innerHTML = _x + _100;
+</script>
+
+*/
 
